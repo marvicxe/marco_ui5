@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.ui.bootcampwebApps1.controller.App"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<App>-->
+	<!--	<pages>-->
+	<!--		<Page title="Title">-->
+	<!--			<content></content>-->
+	<!--		</Page>-->
+	<!--	</pages>-->
+	<!--</App>-->
+
+    <Label text="Username"/>
+    <!--<Input type="Text" id="username" width="30%"/>-->
+    <Input value="{/field/username}"
+    description="Hello{/field/username}"
+    valueLiveUpdate="true"
+    width="100%"
+    id="username"/>
+    <Label text="Password"/>	
+    <Input type="Password" id="password" width="30%"/> 
+    <!--manual text -->
+    <!--<Button text="LogIn" press="onLoginPress"/>--> 
+    <!--link to in18-->
+    <Button text="{i18n>loginButtonText}" press="onLoginPress"/> 
+
+</mvc:View>
